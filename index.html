@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Wedding Invitation | J. Hafsa Fathima & M. Faizal Ahamed</title>
+  <meta name="description" content="You are cordially invited to celebrate the Nikkah & Walimah of J. Hafsa Fathima & M. Faizal Ahamed on Sunday, November 15, 2026 at H.M.O. Auditorium, Mettupalayam.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@600;700;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Falling Petals / Sparkles Canvas -->
+  <canvas id="petalsCanvas"></canvas>
+
+  <!-- Background Music Toggle Button -->
+  <div class="audio-control-wrapper">
+    <button id="audioToggleBtn" class="audio-btn" aria-label="Toggle Background Music" title="Play / Mute Music">
+      <i class="fa-solid fa-volume-xmark" id="audioIcon"></i>
+      <span class="audio-text" id="audioLabel">Music</span>
+    </button>
+  </div>
+
+  <!-- Hero / Envelope Entry Screen -->
+  <section class="envelope-hero" id="envelopeHero">
+    <div class="stars-bg"></div>
+    <div class="envelope-wrapper" id="envelopeWrapper">
+      <div class="islamic-bismillah-top">
+        <p class="bismillah-arabic">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+        <p class="bismillah-sub">In the name of Allah, the Most Beneficent and Most Merciful</p>
+      </div>
+
+      <div class="invitation-seal-card" id="invitationSealCard">
+        <div class="card-ornament top-ornament">✦ ﷽ ✦</div>
+        <h4 class="royal-subtitle">THE WEDDING CELEBRATION</h4>
+        <h1 class="couple-names-hero">
+          <span class="name-part">Hafsa Fathima</span>
+          <span class="heart-ampersand">&amp;</span>
+          <span class="name-part">Faizal Ahamed</span>
+        </h1>
+        <div class="date-hero-pill">
+          <i class="fa-regular fa-calendar-check"></i> Sunday, 15 November 2026
+        </div>
+        <div>
+          <span class="hero-countdown-badge" id="heroCountdownBadge">
+            <i class="fa-solid fa-hourglass-half"></i> Calculating countdown...
+          </span>
+        </div>
+        <p class="envelope-instruction">Tap below to open your personalized invitation</p>
+
+        <button class="open-invite-btn" id="openInviteBtn">
+          <span class="btn-glow"></span>
+          <span class="btn-content">
+            <i class="fa-solid fa-envelope-open-text"></i> Open Invitation
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Portal Content -->
+  <main class="main-content" id="mainContent">
+
+    <!-- Top Floating Quick-Navigation Bar -->
+    <nav class="quick-nav">
+      <a href="#eventDetails" class="nav-link"><i class="fa-solid fa-calendar-day"></i> Event</a>
+      <a href="#cardSection" class="nav-link"><i class="fa-solid fa-image"></i> Invitation Card</a>
+      <a href="#mapSection" class="nav-link highlight-nav"><i class="fa-solid fa-location-dot"></i> Google Map</a>
+    </nav>
+
+    <!-- Couple & Ceremony Header -->
+    <header class="section ceremony-header">
+      <div class="gold-frame-divider">
+        <span class="leaf-icon">❧</span>
+        <span class="divider-line"></span>
+        <span class="crescent-star">☪</span>
+        <span class="divider-line"></span>
+        <span class="leaf-icon">❧</span>
+      </div>
+
+      <p class="blessing-quote">
+        “And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy.”
+        <br><span class="quran-ref">— Surah Ar-Rum [30:21] —</span>
+      </p>
+
+      <div class="parents-honor">
+        <p class="invitation-line">Mrs. &amp; Mr. <strong class="honor-name">M. Jainulabdeen</strong></p>
+        <p class="family-address"><i class="fa-solid fa-house-chimney"></i> Shareef Nagar, Mettupalayam &bull; Mob: +91 93457 47605</p>
+        <p class="request-honor">cordially request the honor of your presence and warm prayers at the wedding ceremony of their beloved daughter</p>
+      </div>
+
+      <!-- Couple Spotlight Showcase -->
+      <div class="couple-spotlight">
+        <div class="person-card bride-card">
+          <div class="avatar-ring">
+            <div class="avatar-icon"><i class="fa-solid fa-gem"></i></div>
+          </div>
+          <h2 class="person-name">J. Hafsa Fathima</h2>
+          <span class="qualification-badge">Aalima Mahdhiya</span>
+          <p class="person-role">D/o. Mrs. &amp; Mr. M. Jainulabdeen</p>
+        </div>
+
+        <div class="knot-centerpiece">
+          <div class="knot-icon"><i class="fa-solid fa-heart"></i></div>
+          <span class="knot-text">TIED TOGETHER IN NIKKAH</span>
+        </div>
+
+        <div class="person-card groom-card">
+          <div class="avatar-ring">
+            <div class="avatar-icon"><i class="fa-solid fa-ring"></i></div>
+          </div>
+          <h2 class="person-name">M. Faizal Ahamed</h2>
+          <span class="qualification-badge">B.Pharm.</span>
+          <p class="person-role">GSK Pharmaceuticals Ltd.</p>
+          <p class="parent-info">S/o. Janab D. Mohamed Farook, Mettupalayam</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Countdown Timer Section -->
+    <section class="section countdown-section">
+      <div class="section-title-wrap">
+        <h3 class="section-badge">IN SHA ALLAH</h3>
+        <h2 class="section-title">Counting Down To The Blessed Day</h2>
+      </div>
+
+      <div class="countdown-grid" id="countdownGrid">
+        <div class="countdown-box">
+          <span class="countdown-value" id="countDays">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-value" id="countHours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-value" id="countMinutes">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-box">
+          <span class="countdown-value" id="countSeconds">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Date & Time & Program Timeline -->
+    <section class="section event-details-section" id="eventDetails">
+      <div class="details-container">
+        <!-- Date Card -->
+        <div class="detail-glass-card">
+          <div class="icon-circle gold">
+            <i class="fa-regular fa-calendar-days"></i>
+          </div>
+          <h3>Wedding Date</h3>
+          <p class="detail-highlight">Sunday</p>
+          <p class="detail-date">15th November 2026</p>
+          <span class="detail-sub">Muharram / Rabi Al-Awwal Season</span>
+        </div>
+
+        <!-- Time Card -->
+        <div class="detail-glass-card">
+          <div class="icon-circle emerald">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <h3>Ceremony Time</h3>
+          <p class="detail-highlight">11:00 AM</p>
+          <p class="detail-date">to 12:00 Noon</p>
+          <span class="detail-sub">Nikkah followed by Feast / Walimah</span>
+        </div>
+
+        <!-- Venue Card -->
+        <div class="detail-glass-card">
+          <div class="icon-circle ruby">
+            <i class="fa-solid fa-location-pin"></i>
+          </div>
+          <h3>Auditorium</h3>
+          <p class="detail-highlight venue-name">H.M.O. Auditorium</p>
+          <p class="detail-address">Siraj Nagar, Sirumugai Road, Mettupalayam</p>
+          <span class="detail-sub">Tamil Nadu, India</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Original Invitation Card Showcase -->
+    <section class="section card-showcase-section" id="cardSection">
+      <div class="section-title-wrap">
+        <h3 class="section-badge">OFFICIAL INVITATION CARD</h3>
+        <h2 class="section-title">View Original Invitation</h2>
+        <p class="section-subtitle">Click on the card to view full resolution or download</p>
+      </div>
+
+      <div class="card-display-container">
+        <div class="invitation-image-frame" id="cardZoomTrigger">
+          <img 
+            src="WhatsApp Image 2026-10-04 at 14.28.06.jpeg" 
+            alt="Wedding Invitation of Hafsa Fathima and Faizal Ahamed" 
+            class="wedding-card-img"
+            loading="lazy"
+          >
+          <div class="card-hover-overlay">
+            <span class="tap-hint"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom Fullscreen</span>
+          </div>
+        </div>
+
+        <div class="card-action-bar">
+          <a href="WhatsApp Image 2026-10-04 at 14.28.06.jpeg" target="_blank" class="action-pill-btn secondary">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Image in New Tab
+          </a>
+          <a href="WhatsApp Image 2026-10-04 at 14.28.06.jpeg" download="Wedding_Invitation_Hafsa_Faizal.jpeg" class="action-pill-btn secondary">
+            <i class="fa-solid fa-download"></i> Save Image
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tamil Blessings & Dua Section -->
+    <section class="section dua-section">
+      <div class="dua-glass-box">
+        <h3 class="tamil-header">நபியின் வழியில் மணமக்களை வாழ்த்தும் துஆ</h3>
+        <div class="dua-arabic">
+          بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+        </div>
+        <p class="dua-tamil-transliteration">
+          “பாரக்கல்லாஹு லக்க வபாரக்க அலைக்குமா வஜமஅ பைனகுமா ஃபீ ஹைர்”
+        </p>
+        <p class="dua-meaning">
+          “மணமக்களே! அல்லாஹ் உங்களுக்கு அருள் புரிவானாக, உங்களுக்கு வழங்கியவற்றிலும் அருள்புரிவானாக, உங்கள் இருவரையும் நன்மையானவற்றில் ஒன்றிணைத்து வைப்பானாக.”
+        </p>
+        <div class="tamil-compliments">
+          <p><strong>தங்கள் நல்வரவை நாடும்:</strong></p>
+          <p>K. அப்துல் மஜீத் குடும்பத்தினர் &bull; S. ஷேக் தாவூது குடும்பத்தினர்</p>
+          <p>A. முஹம்மது இஸ்மாயில் &amp; குடும்பத்தினர்</p>
+          <p class="tamil-friends">மற்றும் நேசமிகு நண்பர்களும் - பாசமிகு மழலைகளும்</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOOGLE MAPS NAVIGATION & REDIRECT SECTION -->
+    <section class="section map-section" id="mapSection">
+      <div class="section-title-wrap">
+        <h3 class="section-badge red-badge"><i class="fa-solid fa-location-dot"></i> VENUE LOCATION</h3>
+        <h2 class="section-title">Reach The Venue Easily</h2>
+        <p class="section-subtitle">Click below to open Google Maps for turn-by-turn driving &amp; transit navigation</p>
+      </div>
+
+      <div class="map-container-card">
+        <!-- Direct Google Maps Big Redirection Banner -->
+        <div class="map-redirect-banner">
+          <div class="venue-info-header">
+            <div class="pin-symbol"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div class="venue-texts">
+              <h3 class="auditorium-title">H.M.O. Auditorium</h3>
+              <p class="auditorium-street">Siraj Nagar, Sirumugai Road, Mettupalayam, Tamil Nadu</p>
+            </div>
+          </div>
+
+          <!-- PRIMARY GOOGLE MAP REDIRECT BUTTON -->
+          <a 
+            id="googleMapPrimaryLink"
+            href="https://www.google.com/maps/search/?api=1&query=H.M.O.+Auditorium+Siraj+Nagar+Sirumugai+Road+Mettupalayam" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="google-map-btn"
+          >
+            <span class="btn-ripple"></span>
+            <i class="fa-solid fa-diamond-turn-right"></i>
+            <span class="btn-main-txt">OPEN IN GOOGLE MAPS</span>
+            <span class="btn-sub-txt">Click to Navigate directly</span>
+          </a>
+        </div>
+
+        <!-- Embedded Interactive Map Preview Frame -->
+        <div class="interactive-map-frame">
+          <iframe 
+            id="googleMapIframe"
+            title="H.M.O. Auditorium Mettupalayam Google Map"
+            src="https://maps.google.com/maps?q=H.M.O.+Auditorium+Siraj+Nagar+Sirumugai+Road+Mettupalayam&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="380" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="map-click-overlay-bar">
+            <span>Can't see the map clearly?</span>
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=H.M.O.+Auditorium+Siraj+Nagar+Sirumugai+Road+Mettupalayam" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="map-external-link"
+            >
+              Open in Google Maps App <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Actions (Add to Calendar, WhatsApp Share, Call) -->
+    <section class="section quick-actions-section">
+      <div class="action-grid">
+        <!-- Add to Google Calendar -->
+        <a 
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+of+Hafsa+Fathima+%26+Faizal+Ahamed&dates=20261115T053000Z/20261115T063000Z&details=Nikkah+%26+Walimah+Ceremony+at+H.M.O.+Auditorium,+Sirumugai+Road,+Mettupalayam&location=H.M.O.+Auditorium,+Sirumugai+Road,+Mettupalayam" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="utility-card"
+        >
+          <div class="utility-icon calendar-icon"><i class="fa-solid fa-calendar-plus"></i></div>
+          <div class="utility-info">
+            <h4>Add to Calendar</h4>
+            <p>Set a reminder on Google Calendar</p>
+          </div>
+          <i class="fa-solid fa-chevron-right chevron"></i>
+        </a>
+
+        <!-- Share on WhatsApp -->
+        <button id="whatsappShareBtn" class="utility-card whatsapp-card">
+          <div class="utility-icon wa-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="utility-info">
+            <h4>Share on WhatsApp</h4>
+            <p>Forward this invite to friends &amp; family</p>
+          </div>
+          <i class="fa-solid fa-share-nodes chevron"></i>
+        </button>
+
+        <!-- Call Contact -->
+        <a href="tel:+919345747605" class="utility-card">
+          <div class="utility-icon phone-icon"><i class="fa-solid fa-phone-volume"></i></div>
+          <div class="utility-info">
+            <h4>Contact Family</h4>
+            <p>+91 93457 47605 (Mr. M. Jainulabdeen)</p>
+          </div>
+          <i class="fa-solid fa-arrow-trend-up chevron"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="portal-footer">
+      <div class="footer-crescent">☪</div>
+      <p class="footer-greeting">With Best Compliments From</p>
+      <h3 class="footer-family">Family &amp; Friends</h3>
+      <p class="footer-sub">We look forward to welcoming you and celebrating together!</p>
+      <div class="footer-bottom-line">
+        <span>© 2026 Wedding Celebration &bull; Hafsa Fathima &amp; Faizal Ahamed</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Modal for Fullscreen Image Zoom -->
+  <div class="image-modal" id="imageModal">
+    <button class="close-modal-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+    <div class="modal-content-wrap">
+      <img src="WhatsApp Image 2026-10-04 at 14.28.06.jpeg" alt="Full Invitation Card" class="modal-img">
+    </div>
+  </div>
+
+  <!-- Audio Tone Synthesizer & Interactive Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
